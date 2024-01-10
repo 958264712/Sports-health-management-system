@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>管理中心</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/updatePassword.css">
+
+    <script src="../js/ajax.js"></script>
+
+    <script src="../js/cookie.js"></script>
+    <script src="../js/cookieLogin.js"></script>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <!-- <img  style="width: 50px; height:50px; border-radius: 50%;"src="../image/favicon.ico"  > -->
+                <span class="fs-4">运动健康信息管理系统</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="./home.html" class="nav-link text-white" aria-current="page">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="./dormitory.html" class="nav-link text-white">
+                        个人中心
+                    </a>
+                </li>
+                <li>
+                    <a href="./tenant.html" class="nav-link text-white">
+                        健康咨询管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./dormitoryFloor.html" class="nav-link text-white">
+                        身体数据管理
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./changePassword.html" class="nav-link text-white">
+                        健康评估管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c1.html" class="nav-link active">
+                        运动计划管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c2.html" class="nav-link text-white">
+                        每日菜谱管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c3.html" class="nav-link text-white">
+                        健康小测管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c4.html" class="nav-link text-white">
+                        健康提醒管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c5.html" class="nav-link text-white">
+                        运动记录管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c6.html" class="nav-link text-white">
+                        数据分析管理
+                    </a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div class="b-example-divider" style="width: calc(100% - 280px);">
+            <!-- 头部 -->
+            <div class="header">
+                <div class="leftMenu">
+                    <span></span>
+                </div>
+                <div class="rightMenu">
+                    <button class="btn_sm" style="color:aqua;" onclick="logout()">退出登录</button>
+                    <img src="https://img2.baidu.com/it/u=927329933,3682605792&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
+                        alt="">
+                    <span></span>
+                </div>
+            </div>
+            <!-- <table class="table table-striped" id="changermanager"
+                style="margin:50px auto; width: 80%; text-align: center; ">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">姓名</th>
+                        <th scope="col">运动名称</th>
+                        <th scope="col">运动地点</th>
+                        <th scope="col">开始时间</th>
+                        <th scope="col">结束时间</th>
+                        <th scope="col">详细说明</th>
+                        <th scope="col">发布时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <th scope="col">1</th>
+                        <th scope="col">Mark</th>
+                        <th scope="col">跑步</th>
+                        <th scope="col">XX市XX公园</th>
+                        <th scope="col"><input type="datetime-local"></th>
+                        <th scope="col"><input type="datetime-local"></th>
+                        <th scope="col">慢跑</th>
+                        <th scope="col"><input type="datetime-local"></th>
+                    </tr>
+                    <tr>
+                        <th scope="col">2</th>
+                        <th scope="col">Mark</th>
+                        <th scope="col">健身</th>
+                        <th scope="col">XX市XX健身房</th>
+                        <th scope="col"><input type="datetime-local"></th>
+                        <th scope="col"><input type="datetime-local"></th>
+                        <th scope="col">练力量</th>
+                        <th scope="col"><input type="datetime-local"></th>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin: auto ;  width: 80%; ">
+                <button onclick="firstPage()">首页</button>
+                <button onclick="upPage()">上一页</button>
+                <button onclick="downPage()">下一页</button>
+                <button onclick="lastPage()">尾页</button>
+                <input type="text" value="1" id="skip" style="width: 50px;">
+                <button onclick="skipPage()">跳转</button>
+            </div> -->
+
+           <div class="moduler">
+            <h3>运动计划</h3>
+            <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-12 position-relative">
+                        <label for="validationTooltip01" class="form-label">姓名</label>
+                        <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12 position-relative">
+                        <label for="validationTooltip02" class="form-label">运动名称</label>
+                        <input type="text" class="form-control" id="validationTooltip02" value="跑步" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-12 position-relative">
+                        <label for="validationTooltip03" class="form-label">运动地点</label>
+                        <input type="text" class="form-control" id="validationTooltip03" value="XX市XX公园" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-12 position-relative">
+                        <label for="validationTooltip03" class="form-label">开始时间</label>
+                        <input type="datetime-local" class="form-control" id="validationTooltip03" value="130" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                   <div class="col-md-12 position-relative">
+                        <label for="validationTooltip03" class="form-label">结束时间</label>
+                        <input type="datetime-local" class="form-control" id="validationTooltip03" value="130" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-12 position-relative">
+                        <label for="validationTooltip03" class="form-label">详细说明</label>
+                        <input type="text" class="form-control" id="validationTooltip03" value="慢跑" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-12 position-relative">
+                        <label for="validationTooltip03" class="form-label">发布时间</label>
+                        <input type="datetime-local" class="form-control" id="validationTooltip03" value="130" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
+           </div>
+            <script src="../js/menu.js"></script>
+
+            <!-- 修改密码的js -->
+            <script src="../js/updatePassword.js"></script>
+
+</body>
+
+</html>

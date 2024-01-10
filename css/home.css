@@ -1,0 +1,142 @@
+/* 文字滚动 */
+#scroll_div{
+    /* width: 100px; */
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 800px;
+    background-color: #23527c;
+    color: #d8d8d8;
+    margin: 1rem 0;
+    text-align: center;
+    margin-left: 150px;
+}
+
+#scroll_begin,#scroll_end{
+    margin-left: 15px;
+    display: inline;
+    
+}
+
+
+/* 轮播图 */
+.boxImages{
+    /* width: 1256px; */
+    width: 100%;
+    height: 352px;
+    position: relative;
+    background-color: aqua;
+    overflow: hidden;
+}
+.boxImages ul{
+    /* width: 7536px; */
+    position: absolute;
+    left: 0;
+    display: flex;
+}
+.boxImages>ul>li{
+    /* width: 1256px; */
+    width: 100%;
+    height: 352px;
+}
+
+.boxImages>ul>li>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.boxImages ol{
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    right: 50px;
+}
+
+.boxImages ol>li{
+    width: 20px;
+    height: 20px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.boxImages ol li.active{
+    background-color: tomato;
+}
+
+
+.hiddenLeftArrow{
+    width: 41px;
+    height: 69px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    overflow: hidden;
+    display: none;
+}
+
+.hiddenRightArrow{
+    width: 41px;
+    height: 69px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -40px;
+    overflow: hidden;
+    display: none;
+}
+
+.hiddenRightArrow img{
+    position: absolute;
+    left: -41px;
+}
+
+/* 通知公告 */
+
+.notice{
+    /* margin-top: 50px;; */
+    height: 100%;
+    background-color: rgb(147,3,64);
+}
+
+.notice>h1{
+    text-align: center;
+    color: azure;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.notice ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.notice ul li{
+    width: 400px;
+    height: 162px;
+    opacity: .8;
+    margin-left: 15px;
+    border: 1px solid wheat;
+    /* background-color: aqua; */
+}
+
+.notice ul li p{
+    color: antiquewhite;
+    font-size: 18px;
+    padding: 32px 0 0 32px;
+}
+
+.notice ul li p:nth-child(2){
+    position: relative;
+    top: -15px;
+}
+
+.notice ul li:hover{
+    background-color: tomato;
+    position: relative;
+    top: -4px;
+}

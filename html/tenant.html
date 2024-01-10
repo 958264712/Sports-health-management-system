@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>租客管理</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+  <script src="../js/cookie.js"></script>
+  <script src="../js/cookieLogin.js"></script>
+  <script src="../js/ajax.js"></script>
+
+
+</head>
+
+<body>
+
+  <main>
+    <h1 class="visually-hidden">Sidebars examples</h1>
+
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <!-- <img  style="width: 50px; height:50px; border-radius: 50%;"src="../image/favicon.ico"  > -->
+        <span class="fs-4">运动健康信息管理系统</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="./home.html" class="nav-link text-white" aria-current="page">
+            首页
+          </a>
+        </li>
+        <li>
+          <a href="./dormitory.html" class="nav-link text-white">
+            个人中心
+          </a>
+        </li>
+
+        <li>
+          <a href="./tenant.html" class="nav-link active">
+            健康咨询管理
+          </a>
+        </li>
+
+        <li>
+          <a href="./dormitoryFloor.html" class="nav-link text-white">
+            身体数据管理
+          </a>
+        </li>
+
+        <li>
+          <a href="./changePassword.html" class="nav-link text-white">
+            健康评估管理
+          </a>
+        </li>
+        <li>
+          <a href="./c1.html" class="nav-link text-white">
+            运动计划管理
+          </a>
+        </li>
+        <li>
+          <a href="./c2.html" class="nav-link text-white">
+            每日菜谱管理
+          </a>
+        </li>
+        <li>
+          <a href="./c3.html" class="nav-link text-white">
+            健康小测管理
+          </a>
+        </li>
+        <li>
+          <a href="./c4.html" class="nav-link text-white">
+            健康提醒管理
+          </a>
+        </li>
+        <li>
+          <a href="./c5.html" class="nav-link text-white">
+            运动记录管理
+          </a>
+        </li>
+        <li>
+          <a href="./c6.html" class="nav-link text-white">
+            数据分析管理
+          </a>
+        </li>
+      </ul>
+      <hr>
+    </div>
+
+    <div class="b-example-divider" style="width: calc(100% - 280px);">
+      <!-- 头部 -->
+      <div class="header">
+        <div class="leftMenu">
+          <span></span>
+        </div>
+        <div class="rightMenu">
+          <button class="btn_sm" style="color:aqua;" onclick="logout()">退出登录</button>
+          <img src="https://img2.baidu.com/it/u=927329933,3682605792&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="">
+          <span></span>
+        </div>
+      </div>
+      <div class="moduler" id="content">
+        <h3>健康咨讯</h3>
+        <div class="healthinfo" data-font-size="12">
+          <div data-font-size="12">
+            <div class="hot-tags" data-font-size="12">
+              <div class="label" data-font-size="13">热门搜寻:</div>
+              <div class="tags" data-font-size="12"><!--                --><a
+                  href="/zh-hans/healthinfo/search/?hot_tags=%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%0D"
+                  class="tag" data-font-size="13">新型冠状病毒
+                </a><!--                --><a
+                  href="/zh-hans/healthinfo/search/?hot_tags=%E7%9D%A1%E7%9C%A0%E7%AA%92%E6%81%AF%E7%97%87%0D"
+                  class="tag" data-font-size="13">睡眠窒息症
+                </a><!--                --><a href="/zh-hans/healthinfo/search/?hot_tags=%E7%96%AB%E8%8B%97%0D"
+                  class="tag" data-font-size="13">疫苗
+                </a><!--                --><a href="/zh-hans/healthinfo/search/?hot_tags=HPV" class="tag"
+                  data-font-size="13">HPV</a><!--             --></div>
+            </div>
+            <div class="healthinfo-list" data-font-size="12"> <a
+                href="/zh-hans/healthinfo/info_detail/Intraocular-lens-IOL/" class="healthinfo-item"
+                data-font-size="12"> <span class="photo"><img
+                    src="https://humanhealth.com.hk/img/?hash=51b783ef0affc3a56862914a2b6f234a.png" alt="HH_健康資訊_54"
+                    width="380" height="214"></span><!--         --><span class="healthinfo-item-info"
+                  data-font-size="12"> <span class="healthinfo-item-title ellipsis" data-height="30"
+                    data-font-size="15">4款人工晶片 助白内障患者重拾视力</span>
+                  <p class="healthinfo-item-content ellipsis" data-height="50" data-font-size="15">
+                    白内障是指眼睛内的晶体变混浊。要治疗白内障，做手术是唯一根治的方法。现时白内障的科技成熟，伤...</p> <span class="healthinfo-item-date"
+                    data-font-size="12">2024.1.9</span>
+                </span> </a> <a href="/zh-hans/healthinfo/info_detail/covid/" class="healthinfo-item"
+                data-font-size="12"> <span class="photo"><img
+                    src="https://humanhealth.com.hk/img/?hash=459a1593b06d7821af7b061fea9bf330.png" alt="HH_健康資訊_14"
+                    width="380" height="214"></span><!--         --><span class="healthinfo-item-info"
+                  data-font-size="12"> <span class="healthinfo-item-title ellipsis" data-height="30"
+                    data-font-size="15">接种疫苗前后的注意事项 | COVID-19</span>
+                  <p class="healthinfo-item-content ellipsis" data-height="50" data-font-size="15">
+                    面对疫情的挑战，近期变种病毒隐形传播链在社区扩散，再次引起全港市民对接种疫苗的关注。每个人体...</p> <span class="healthinfo-item-date"
+                    data-font-size="12">2024.1.8</span>
+                </span> </a> <a href="/zh-hans/healthinfo/info_detail/corns-treatment/" class="healthinfo-item"
+                data-font-size="12"> <span class="photo"><img
+                    src="https://humanhealth.com.hk/img/?hash=76313205b78a4debab40cb0219385274.png" alt="HH_健康資訊_13"
+                    width="380" height="214"></span><!--         --><span class="healthinfo-item-info"
+                  data-font-size="12"> <span class="healthinfo-item-title ellipsis" data-height="30"
+                    data-font-size="15">如何治疗鸡眼? 最紧要做好足部护理！</span>
+                  <p class="healthinfo-item-content ellipsis" data-height="50" data-font-size="15">如何治疗鸡眼? 最紧要做好足部护理！
+                    &nbsp; 女士常常因为穿着高跟鞋而生鸡眼，当鸡眼日渐严重时，就会令走...</p> <span class="healthinfo-item-date"
+                    data-font-size="12">2024.1.7</span>
+                </span> </a> <a href="/zh-hans/healthinfo/info_detail/sore-throat/" class="healthinfo-item"
+                data-font-size="12"> <span class="photo"><img
+                    src="https://humanhealth.com.hk/img/?hash=46c8a45114d84babedad8982078fdafa.png" alt="HH_健康資訊_12"
+                    width="380" height="214"></span><!--         --><span class="healthinfo-item-info"
+                  data-font-size="12"> <span class="healthinfo-item-title ellipsis" data-height="30"
+                    data-font-size="15">喉咙痛可能是身体发出的健康警号?</span>
+                  <p class="healthinfo-item-content ellipsis" data-height="50" data-font-size="15">喉咙痛可能是身体发出的健康警号?
+                    &nbsp; 喉咙痛的原因很多，由普通的伤风感冒，至较严重的流感及发炎等也...</p> <span class="healthinfo-item-date"
+                    data-font-size="12">2024.1.6</span>
+                </span> </a> <a href="/zh-hans/healthinfo/info_detail/rosacea/" class="healthinfo-item"
+                data-font-size="12"> <span class="photo"><img
+                    src="https://humanhealth.com.hk/img/?hash=3c2f0d705f731bedb593511de88ddbf6.png" alt="HH_健康資訊_3"
+                    width="380" height="214"></span><!--         --><span class="healthinfo-item-info"
+                  data-font-size="12"> <span class="healthinfo-item-title ellipsis" data-height="30"
+                    data-font-size="15">2024.1.5</span>
+                  <p class="healthinfo-item-content ellipsis" data-height="50" data-font-size="15">认识玫瑰痤疮
+                    有新冠疫情以来，大家都长期配戴口罩，容易令面部油脂分泌增多而长粒粒。不少人以为...</p> <span class="healthinfo-item-date"
+                    data-font-size="12">2024.1.4</span>
+                </span> </a> <a href="/zh-hans/healthinfo/info_detail/colonoscopy-gastroscopy/" class="healthinfo-item"
+                data-font-size="12"> <span class="photo"><img
+                    src="https://humanhealth.com.hk/img/?hash=630758f6caa03f3f89f8a850268c8c46.png" alt="HH_健康資訊_1"
+                    width="380" height="214"></span><!--         --><span class="healthinfo-item-info"
+                  data-font-size="12"> <span class="healthinfo-item-title ellipsis" data-height="30"
+                    data-font-size="15">肠胃肝脏科 | 肝炎症状|
+                    胃肠镜检查</span>
+                  <p class="healthinfo-item-content ellipsis" data-height="50" data-font-size="15">
+                    胃肠镜检查经常感到肠胃不适？消化不良？胃肠镜检查能帮助您更深入地调查背后原因。胃肠镜检查是使...</p> <span class="healthinfo-item-date"
+                    data-font-size="12">2024.1.3</span>
+                </span> </a> </div>
+            <div class="pager" data-font-size="12"> <a class="prev disabled" href="#" data-font-size="12"> <span
+                  class="icon"></span> <span class="text" data-font-size="15">前一页</span> </a>
+              <div class="range" data-font-size="12"><!--          --><a class="page_num current"
+                  href="/zh-hans/healthinfo/infos/?page=1" data-font-size="12">1</a><!--          --><a
+                  class="page_num " href="/zh-hans/healthinfo/infos/?page=2"
+                  data-font-size="12">2</a><!--          --><a class="page_num "
+                  href="/zh-hans/healthinfo/infos/?page=3" data-font-size="12">3</a><!--          --><a
+                  class="page_num " href="/zh-hans/healthinfo/infos/?page=4" data-font-size="12">4</a><!--       -->
+              </div> <a class="next " href="/zh-hans/healthinfo/infos/?page=2" data-font-size="12"> <span class="text"
+                  data-font-size="15">後一页</span> <span class="icon"></span> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/tenant.js"></script>
+</body>
+
+</html>

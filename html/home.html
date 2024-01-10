@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>宿舍后台管理主页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/staly.css">
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+
+    <script src="../js/cookie.js"></script>
+    <!-- 检查登录 -->
+    <script src="../js/cookieLogin.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <h1 class="visually-hidden">Sidebars examples</h1>
+
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <!-- <img  style="width: 50px; height:50px; border-radius: 50%;"src="../image/favicon.ico"  > -->
+                <span class="fs-4">运动健康信息管理系统</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="./home.html" class="nav-link active" aria-current="page">
+                    
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="./dormitory.html" class="nav-link text-white">
+                       
+                        个人中心
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./tenant.html" class="nav-link text-white">
+                       
+                        健康咨询管理
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./dormitoryFloor.html" class="nav-link text-white">
+                       
+                        身体数据管理
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./changePassword.html" class="nav-link text-white">
+                        
+                        健康评估管理
+                    </a>
+                </li>
+<li>
+                    <a href="./c1.html" class="nav-link text-white">
+                        运动计划管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c2.html" class="nav-link text-white">
+                        每日菜谱管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c3.html" class="nav-link text-white">
+                        健康小测管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c4.html" class="nav-link text-white">
+                        健康提醒管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c5.html" class="nav-link text-white">
+                        运动记录管理
+                    </a>
+                </li>
+                <li>
+                    <a href="./c6.html" class="nav-link text-white">
+                        数据分析管理
+                    </a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <div class="b-example-divider" style="width: calc(100% - 280px);">
+            <!-- 头部 -->
+            <div class="header">
+                <div class="leftMenu">
+                    <span></span>
+                </div>
+                <div class="rightMenu">
+                    <button class="btn_sm" style="color:aqua;" onclick="logout()">退出登录</button>
+                    <img src="https://img2.baidu.com/it/u=927329933,3682605792&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
+                        alt="">
+                    <span></span>
+                </div>
+            </div>
+            <!-- 内容 -->
+            <!-- 文字滚动 -->
+            <div id="scroll_div">
+                <div id="scroll_begin">
+                    <span
+                        class="pad_right">深圳对所有来深返深人员落实三个“100%”(100%测温、
+                        100%健康码亮绿码通行、100%佩戴口罩)、扫场所码并亮码。
+                        出行前建议电话咨询0755-12345深圳政府服务热线，具体防疫政策以深圳各个社区实际
+                        执行为准。</span>
+                </div>
+                <div id="scroll_end"></div>
+            </div>
+            <!-- 轮播图 -->
+            <div class="boxImages">
+                <ul>
+                    <li><img src="../image/01.png" alt=""></li>
+                    <li><img src="../image/02.png" alt=""></li>
+                    <li><img src="../image/03.jpg" alt=""></li>
+                    <li><img src="../image/04.png" alt=""></li>
+                   
+                </ul>
+                <ol></ol>
+                <span class="hiddenLeftArrow"><img src="../image/icon-slides.png" alt="" class="left"></span>
+                <span class="hiddenRightArrow"><img src="../image/icon-slides.png" alt="" class="right"></span>
+            </div>
+
+            <div class="notice">
+                <h1>通知公告</h1>
+                <ul>
+                    <li>
+                       <a href="https://mp.weixin.qq.com/s/Xv6MHgUYa84UXwjJxfv0CA">
+                        <p>2022-6-8</p>
+                        <p>关于"节约水电，低碳健康"的公开倡议书</p>
+                       </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>2022-6-20</p>
+                            <p>关于做好疫情防护措施</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>2022-6-23</p>
+                            <p>宿舍红白榜名单</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <script src="../js/menu.js"></script>
+        <script src="../js/home.js"></script>
+        <script src="../js/utils.js"></script>
+       
+</body>
+
+</html>

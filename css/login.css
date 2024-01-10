@@ -1,0 +1,89 @@
+body{
+    background: url('https://img95.699pic.com/photo/40140/4115.gif_wh300.gif') no-repeat;
+    background-size: cover;
+}
+
+
+.login{
+    width: 320px;
+    height: 350px;
+    margin: 10% auto;
+    position: relative;
+    /* border: 1px solid #444; */
+    border-radius: 6px;
+    box-shadow: 30px;
+    
+}
+
+.login p:nth-child(1){
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-size: 22px;
+    color: aqua;
+    
+}
+
+.tips{
+    position: relative;
+    top: 50px;
+    color: red;
+    text-align: center;
+}
+
+.login form{
+    padding: 60px 0px 0 58px;
+    position: relative;
+
+}
+
+.login form input{
+    width: 200px;
+    height: 22px;
+    margin-top: 15px;
+}
+
+.login form input:nth-child(5){
+    width: 110px;
+}
+#checked{
+    width: 20px;
+    position: relative;
+    top: -25px;
+   
+}
+
+#checked+span{
+    position: relative;
+    top:  -32px;
+    left: 9px;
+    font-size: 12px;
+}
+   
+
+label{
+    height: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.code{
+    width: 80px;
+    height: 26px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    left: 127px;
+    bottom: 27px;
+    text-align: center;
+    line-height: 26px;
+    font-style: italic;
+}
+
+#login{
+    width: 124px;
+    height: 30px;
+    background-color: turquoise;
+    /* margin-top: 30px; */
+    margin-left: 32px;
+}
